@@ -9,17 +9,75 @@
 </head>
 <body>
     <main>
-        <div class="container">
+        <div class="container-fluid">
             <div class="content">
-                <form action="">
+                <h2 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                <form action="" class="text-center">
+                    <label for="NomeCognome">Nome Cognome</label>
+                    <input type="text" id="NomeCognome" required>
+
                     <label for="km">Km da percorrere:</label>
-                    <input type="number" id="km" name='km' min="1">
+                    <input type="number" id="km" name='km' min="1" required>
 
                     <label for="età">Età del passeggero:</label>
-                    <input type="number" id="eta" name='eta' min="1">
+                    <input type="number" id="eta" name='eta' min="1" required>
 
-                    <button onclick="calcolaPrezzo()" id="button">Invia</button>
+                    <button onclick="calcolaPrezzo()" id="button">Calcola Prezzo</button>
                 </form>
+
+               <div class="row mt-5">
+                 <div class="col">
+                      <div class="card">
+                        <div class="card-header text-center">
+                            TRAIN TICKET
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="information mb-5 fs-5">
+                                        <strong>Nome e Cognome</strong>
+                                    </div>
+                                    <div id="name-surname" class="mb-3 fs,6">
+                                        Nome Cognome
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="information mb-5">
+                                        <strong>Offerta</strong>
+                                    </div>
+                                    <div id="offerta" class="mb-3">
+                                        Biglietto standard
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="information mb-5">
+                                        <strong>Carrozza</strong>
+                                    </div>
+                                    <div id="carrozza" class="mb-3">
+                                        carrozza
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="information mb-5">
+                                        <strong>Codice CP</strong>
+                                    </div>
+                                    <div id="codice" class="mb-3">
+                                        00000
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="information mb-5">
+                                        <strong>Costo biglietto</strong>
+                                    </div>
+                                    <div id="prezzo" class="mb-3">
+                                        0,00&euro;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                 </div>
+               </div>
             </div>
         </div>
     </main>

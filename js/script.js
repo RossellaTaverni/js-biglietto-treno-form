@@ -27,3 +27,8 @@ function calcolaPrezzo() {
 
     alert("Il prezzo del biglietto è: €" + prezzoFinale.toFixed(2));
   }
+
+  // INFORMAZIONI BIGLIETTO
+  const nameSurname = getElementById('name-surname');
+  const prezzo = getElementById('prezzo');
+  
